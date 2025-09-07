@@ -1,0 +1,39 @@
+'pytest' n'est pas reconnu en tant que commande interne
+ou externe, un programme ex‚cutable ou un fichier de commandes.
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-8.4.1, pluggy-1.6.0
+rootdir: C:\Users\alexa\OneDrive\Desktop\identity_api_prototype
+configfile: pytest.ini
+collected 16 items
+
+tests\test_app.py REGISTER: 201 {'message': 'User registered'}
+LOGIN: 200 {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1NzI3NTk3MywianRpIjoiZTYzYWRmZTItZmE3NC00M2M4LWE1NjItMWYwMDk4YTcxZmMyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NTcyNzU5NzMsImNzcmYiOiJmYTgwZDQxOC0xOTgwLTQ3ZTAtYTY4My1hNzI3M2I4YTY1MDUiLCJyb2xlIjoiZnJpZW5kIn0.O1sCOm-qxDWCj7IlDlfVkt4xfHUx2TTVeDfJlSfd3Ds'}
+.
+tests\test_jwt_unit.py JWT header piece: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+.
+tests\test_profiles.py ..........
+tests\test_unit_smoke.py Sum: 2 + 3 = 5
+.Original: '  hello World  ' -> Cleaned: Hello World
+.JSON length: 55
+.Hash prefix: scrypt:32768:8:1
+.
+
+=================================== PASSES ====================================
+=========================== short test summary info ===========================
+PASSED tests/test_app.py::test_register_and_login
+PASSED tests/test_jwt_unit.py::test_jwt_roundtrip
+PASSED tests/test_profiles.py::test_register_and_login_smoke
+PASSED tests/test_profiles.py::test_admin_create_profile_and_read
+PASSED tests/test_profiles.py::test_non_admin_cannot_write
+PASSED tests/test_profiles.py::test_friend_can_read_only_social
+PASSED tests/test_profiles.py::test_hr_can_read_legal_and_social
+PASSED tests/test_profiles.py::test_list_profiles_admin_and_friend
+PASSED tests/test_profiles.py::test_forbidden_context_is_logged
+PASSED tests/test_profiles.py::test_reset_profile_clear_selected
+PASSED tests/test_profiles.py::test_reset_profile_clear_all
+PASSED tests/test_profiles.py::test_audit_logs_admin_only
+PASSED tests/test_unit_smoke.py::test_math_basics
+PASSED tests/test_unit_smoke.py::test_string_ops
+PASSED tests/test_unit_smoke.py::test_json_roundtrip
+PASSED tests/test_unit_smoke.py::test_password_hash_unit
+============================= 16 passed in 5.14s ==============================

@@ -1,0 +1,3 @@
+username,token,preferred_language,identity_data
+alex,token789,en,"{'legal': 'Alex', 'social': 'Li dawg', 'religious': 'Lord Li'}"
+bob,token3,en,"{'legal': 'legal bob', 'social': 'social bob', 'religious': 'spirit bob'}"
